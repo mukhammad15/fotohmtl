@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*
+
+Global CSS
+
+ */
+
+ li{
+     list-style: none;
+ }
+ a{
+     text-decoration: none;
+     color: inherit;
+ }
+
+
+ /*
+ 
+    Main CSS
+
+  */
+
+  nav{
+      width: 100%;
+      height: 80px;
+      background-color: dodgerblue;
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+  }
+
+  .nav_collection{
+      display: flex;
+  }
+  .nav_item{
+      margin-left: 40px;
+  }
+
+  .banner{
+      width: 80%;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .banner_text{
+      width: 50%;
+
+  }
+.banner_text h1{
+    font-size: 64px;
+    color: #555;
+}
+.banner_text p{
+    margin-top: 20px;
+    width: 70%;
+    line-height: 1.5;
+    color: dodgerblue;
+}
+
+  .banner_image{
+      width: 50%;
+      height: 450px;
+      background: url(./qyn.jpg) no-repeat center/cover;
+
+  }
+  .gallery{
+      text-align: center;
+      font-size: 50px;
+      font-weight: 300;
+      color: #555;
+  }
+
+  .Gallery_con{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .card{
+      width: 320px;
+      height: 280px;
+      margin: 10px;
+  }
+  .card img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+
+
+
+
+
+
+
+
+/* Planshet media */
+@media screen and (max-width:990px) {
+    .banner_text h1{
+        font-size: 44px;
+    }
+}
+
+
+
+
+
+  /*
+    Mobile media  
+   */
+   @media screen and (max-width:600px) {
+       nav{
+           padding: 0 20px;
+       }
+
+       .nav_collection{
+           display: none;
+       }
+       .banner_text h1{
+           font-size: 30px;
+       }
+       .banner{
+           width: 94%;
+       }
+       .banner_text{
+           width: 100%;
+       }
+       .banner_image{
+           width: 100%;
+           height: 350px;
+           margin-top: 20px;
+       }
+       .gallery{
+           font-size: 32px;
+       }
+       .Gallery_con{
+           width: 94%;
+       }
+   }

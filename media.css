@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    font-size: 80px;
+}
+.container{
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 20px;
+}
+.box{
+    background-color: blueviolet;
+}
+
+.flex{
+  width: 80%;
+  min-height: 400px;
+  margin: 20px auto;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex_item{
+    width: 270px;
+    height: 320px;
+    background-color: violet;
+    margin: 10px;
+}
+
+.mobile_title{
+    text-align: center;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media CSS */
+
+/* Planshet uchun */
+@media screen and (max-width: 950px) {
+    .title{
+        font-size: 60px;
+        color: blue;
+    }
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mobile_title{
+        text-align: center;
+        display: block;
+    }
+}
+
+
+
+/* Mobile uchun */
+@media screen and (max-width: 500px){
+    .title{
+        font-size: 30px;
+        color: red;
+    }
+
+    .container{
+        width: 94%;
+        grid-template-columns:  1fr;
+    }
+}
